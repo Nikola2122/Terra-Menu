@@ -1,0 +1,21 @@
+function NavBar(props){
+    const active = {backgroundColor:'rgb(141, 187, 234)'}
+    return (
+        <div id={'nav'}>
+            <button style={props.whatToShow==="Salads" ? active : null} onClick={() => {props.navClick("Salads")}}>
+                Салати
+            </button>
+            <button style={props.whatToShow==="Hot" ? active : null} onClick={() => {props.navClick("Hot")}}>
+                Топли јадења
+            </button>
+            <button style={props.whatToShow==="Pizza" ? active : null} onClick={() => {props.navClick("Pizza")}}>
+                Пици и пастрмајлии
+            </button>
+            <button style={props.whatToShow==="Drinks" ? active : null} onClick={() => {props.navClick("Drinks")}}>
+                Пијалоци
+            </button>
+        </div>
+    )
+}
+
+export default NavBar
