@@ -1,5 +1,5 @@
 function NavBar(props){
-    const active = {backgroundColor:'rgb(141, 187, 234)'}
+    const active = {backgroundColor:'white', color:'rgba(0, 84, 172, 1)'}
     return (
         <div id={'nav'}>
             <button style={props.whatToShow==="Salads" ? active : null} onClick={() => {props.navClick("Salads")}}>

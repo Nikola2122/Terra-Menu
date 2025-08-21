@@ -22,7 +22,8 @@
     font-family: 'Allura', sans-serif;
 }
 #main{
-    width: 200px;
+    max-width: 700px;
+    width: 100%;
     margin: 20px auto auto auto;
     display: flex;
     flex-direction: column;
@@ -32,10 +33,12 @@
 #nav{
     display: flex;
     justify-content: space-evenly;
-    width: 500px;
-    gap: 20px;
-    border: 1px solid black;
+    max-width: 700px;
+    width: 100%;
+    gap: 30px;
     height: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 #nav button{
     background-color: rgba(0, 84, 172, 1);
@@ -46,15 +49,75 @@
     width: 150px;
 }
 #nav button:hover{
-    background-color: rgb(141, 187, 234);
+    background-color: white;
+    color:  rgba(0, 84, 172, 1);
     transition: 0.5s;
 }
 #nav button{
     display: inline-block;
 }
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+}
+.item{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0 10px 0
+}
+.name-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name{
+    font-size: 25px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 450;
+    width: 250px;
+}
+.desc{
+    font-style: italic;
+    width: 250px;
+}
+.price{
+    font-size: 20px;
+    margin-top: 20px
+}
 @media (max-width: 768px) {
     .head{
         height: 100px;
         font-size: 35px;
+    }
+    #nav button{
+        width: 130px;
+        font-size: 18px;
+    }
+    #nav{
+        max-width: 350px;
+        width: 90%;
+        gap: 15px;
+        margin-bottom: 80px;
+    }
+    .item{
+        width: 100%;
+        padding: 5px 10px 5px 10px;
+    }
+    .name{
+        font-size: 20px;
+        width: 200px;
+    }
+    .desc{
+        font-size: 15px;
+        width: 200px;
+    }
+    .price{
+        font-size: 15px;
     }
 }

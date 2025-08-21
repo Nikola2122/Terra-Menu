@@ -1,13 +1,12 @@
+import Hot from "./menus/Hot";
+
 function Display(props) {
     return (
         <div>
-            {props.whatToShow === 'Salads' ?
-                (
-                    <div>salad</div>
-                ) :
-                (
-                    <div>smth else</div>
-                )
+            {props.whatToShow === 'Hot' ?
+                <Hot />
+                 :
+                null
             }
         </div>
     )
