@@ -1,12 +1,12 @@
-import Hot from "./menus/Hot";
+import Nothing from "./menus/Nothing";
+import Menu from "./menus/Menu";
 
 function Display(props) {
     return (
         <div>
-            {props.whatToShow === 'Hot' ?
-                <Hot />
-                 :
-                null
+            {props.whatToShow === 'Nothing' ?
+                <Nothing /> :
+                <Menu whatToShow={props.whatToShow} />
             }
         </div>
     )
