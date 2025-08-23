@@ -1,9 +1,16 @@
-import logo from './logo.png'
-function Nothing(){
+import logo from './logo_blue.png'
+import {motion} from "framer-motion";
+
+function Nothing() {
     return (
-        <div className={'menu'}>
+        <motion.div
+            className={'menu'}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 1}}
+        >
             <img id={'logo-png'} src={logo} alt={''}/>
-        </div>
+        </motion.div>
     )
 }
 

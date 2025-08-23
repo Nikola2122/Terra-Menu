@@ -7,12 +7,12 @@ import {AnimatePresence, motion} from "framer-motion";
 import logo from '../menus/logo.png'
 
 const types = {
-    'Alcoholic': alcoholic,
+    'alcoholic': alcoholic,
     'nonAlcoholic': nonAlcoholic,
     'coffee': coffee
 }
 const names = {
-    'Alcoholic': 'Алкохолни пијалоци',
+    'alcoholic': 'Алкохолни пијалоци',
     'nonAlcoholic': 'Безалкохолни пијалоци',
     'coffee': 'Кафе'
 }

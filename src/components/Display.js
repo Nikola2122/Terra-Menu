@@ -10,7 +10,7 @@ function Display(props) {
                     <div className={'menu'}>
                         <DrinkMenu id={1} name={'coffee'}/>
                         <DrinkMenu id={2} name={'nonAlcoholic'}/>
-                        <DrinkMenu id={3} name={'Alcoholic'}/>
+                        <DrinkMenu id={3} name={'alcoholic'}/>
                     </div>
                     :
                     <Menu whatToShow={props.whatToShow}/>

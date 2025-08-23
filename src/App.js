@@ -4,7 +4,7 @@ import MainPart from "./components/MainPart";
 import Footer from "./components/Footer";
 function App() {
     return (
-        <div>
+        <div id={'wrapper'}>
             <Header />
             <MainPart />
             <Footer />
