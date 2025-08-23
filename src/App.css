@@ -84,13 +84,18 @@
     font-weight: 450;
     width: 250px;
 }
+.name-drink{
+    font-size: 25px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 450;
+    width: 250px;
+}
 .desc{
     font-style: italic;
     width: 250px;
 }
 .price{
     font-size: 20px;
-    margin-top: 20px;
     width: 80px;
 }
 #logo-png{
@@ -106,6 +111,22 @@
 .footer-divs{
     width: 100px;
 }
+.drinkToggle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    width: 500px;
+    background-color: rgba(0, 84, 172, 1);
+    color: white;
+    font-size: 25px;
+}
+#toggleLogo{
+    width: 50px;
+}
+.drinkName{
+    width: 300px;
+}
 @media (max-width: 768px) {
     .head{
         height: 100px;
@@ -118,6 +139,9 @@
         width: 130px;
         font-size: 18px;
     }
+    .menu{
+        min-height: 350px;
+    }
     #nav{
         max-width: 350px;
         width: 90%;
@@ -125,11 +149,15 @@
         margin-bottom: 80px;
     }
     .item{
-        width: 100%;
+        width: 300px;
         padding: 5px 10px 5px 10px;
     }
     .name{
         font-size: 20px;
+        width: 200px;
+    }
+    .name-drink{
+        font-size: 16px;
         width: 200px;
     }
     .desc{
@@ -148,5 +176,12 @@
     }
     .footer-divs{
         font-size: 13px;
+    }
+    .drinkToggle{
+        width: 320px;
+        font-size: 20px;
+    }
+    .drinkName{
+        width: 200px;
     }
 }
