@@ -1,7 +1,7 @@
 import React from "react";
-import {alcoholic} from "../../data/Drinks";
-import {nonAlcoholic} from "../../data/Drinks";
-import {coffee} from "../../data/Drinks";
+import alcoholic from "../../data/Drinks/alcoholic.json";
+import nonAlcoholic from "../../data/Drinks/nonAlcoholic.json";
+import coffee from "../../data/Drinks/coffee.json";
 import DrinkItem from "../DrinkItem";
 import {AnimatePresence, motion} from "framer-motion";
 import logo from '../menus/logo.png'
@@ -14,7 +14,7 @@ const types = {
 const names = {
     'alcoholic': 'Алкохолни пијалоци',
     'nonAlcoholic': 'Безалкохолни пијалоци',
-    'coffee': 'Кафе'
+    'coffee': 'Топли пијалоци'
 }
 
 class DrinkMenu extends React.Component {

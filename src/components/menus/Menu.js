@@ -1,7 +1,7 @@
 import Item from "../Item";
-import Hot from "../../data/Hot";
-import Salads from "../../data/Salads"
-import Pizza from "../../data/Pizza"
+import Hot from "../../data/Hot.json";
+import Salads from "../../data/Salads.json"
+import Pizza from "../../data/Pizza.json"
 
 const types = {
     'Hot': Hot,

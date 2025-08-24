@@ -2,16 +2,16 @@ function NavBar(props){
     const active = {backgroundColor:'white', color:'rgba(0, 84, 172, 1)'}
     return (
         <div id={'nav'}>
-            <button style={props.whatToShow==="Salads" ? active : null} onClick={() => {props.navClick("Salads")}}>
+            <button className={props.whatToShow==="Salads" ? "active" : null} onClick={() => {props.navClick("Salads")}}>
                 Салати
             </button>
-            <button style={props.whatToShow==="Hot" ? active : null} onClick={() => {props.navClick("Hot")}}>
+            <button className={props.whatToShow==="Hot" ? "active" : null} onClick={() => {props.navClick("Hot")}}>
                 Топли јадења
             </button>
-            <button style={props.whatToShow==="Pizza" ? active : null} onClick={() => {props.navClick("Pizza")}}>
+            <button className={props.whatToShow==="Pizza" ? "active" : null} onClick={() => {props.navClick("Pizza")}}>
                 Пици и пастрмајлии
             </button>
-            <button style={props.whatToShow==="Drinks" ? active : null} onClick={() => {props.navClick("Drinks")}}>
+            <button className={props.whatToShow==="Drinks" ? "active" : null} onClick={() => {props.navClick("Drinks")}}>
                 Пијалоци
             </button>
         </div>
