@@ -137,6 +137,17 @@
     width: 80px;
     font-style: italic;
 }
+.drink-sub{
+    background-color: white;
+    color: #0054AC;
+    font-size: 25px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #0054AC, #B0D6FF);
+    border-image-slice: 1;
+}
 #logo-png{
     width: 500px;
     margin: -50px auto auto auto
@@ -192,6 +203,7 @@
     }
     .menu{
         min-height: 350px;
+        max-width: 350px;
     }
     #nav{
         width: 90%;
@@ -237,5 +249,8 @@
     }
     #right-div{
         margin-left: 5px;
+    }
+    .drink-sub{
+        font-size: 22px;
     }
 }

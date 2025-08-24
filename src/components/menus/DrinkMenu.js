@@ -5,6 +5,7 @@ import coffee from "../../data/Drinks/coffee.json";
 import DrinkItem from "../DrinkItem";
 import {AnimatePresence, motion} from "framer-motion";
 import logo from '../menus/logo.png'
+import DrinkSub from "../DinkSub";
 
 const types = {
     'alcoholic': alcoholic,
@@ -30,12 +31,13 @@ class DrinkMenu extends React.Component {
             return {
                 toggled: !prevState.toggled
             }
-        })
+        });
     }
 
     render() {
         const components = types[this.props.name].map((el) => {
-            return <DrinkItem id={el.id} key={el.id + 'dr'} name={el.name} desc={el.desc} price={el.price}/>
+            return el.price !== 'sub' ? <DrinkItem id={el.id} key={el.id + 'dr'} name={el.name} desc={el.desc} price={el.price}/> :
+                <DrinkSub key={el.id} name={el.name}/>
         })
         return (
             <motion.div
