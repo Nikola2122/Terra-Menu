@@ -319,7 +319,7 @@
   },
   {
     "name": "Mojito",
-    "desc": "кафеав шеќер, нане, бел рум, mojito syrup, triple sec, газирана вода",
+    "desc": "бел рум, кафеав шеќер, нане, mojito syrup, triple sec, газирана вода",
     "price": "200 ден.",
     "id": 33
   },
@@ -331,7 +331,7 @@
   },
   {
     "name": "Blue Lagoon",
-    "desc": "Водка, цеден сок од лимон, спрајт, blue curacao",
+    "desc": "водка, цеден сок од лимон, спрајт, blue curacao",
     "price": "150 ден.",
     "id": 35
   },
