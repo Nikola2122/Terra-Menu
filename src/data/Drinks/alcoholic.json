@@ -313,43 +313,43 @@
   },
   {
     "name": "Hugo",
-    "desc": "",
+    "desc": "elder flower, просеко, газирана вода",
     "price": "200 ден.",
     "id": 32
   },
   {
     "name": "Mojito",
-    "desc": "",
+    "desc": "кафеав шеќер, нане, бел рум, mojito syrup, triple sec, газирана вода",
     "price": "200 ден.",
     "id": 33
   },
   {
     "name": "Aperol",
-    "desc": "",
+    "desc": "аперол, просеко, газирана вода",
     "price": "200 ден.",
     "id": 34
   },
   {
     "name": "Blue Lagoon",
-    "desc": "",
+    "desc": "Водка, цеден сок од лимон, спрајт, blue curacao",
     "price": "150 ден.",
     "id": 35
   },
   {
     "name": "Pina Colada",
-    "desc": "",
+    "desc": "бел рум, coconut syrup, triple sec, шлаг пена, сок од ананас",
     "price": "220 ден.",
     "id": 36
   },
   {
     "name": "Fruit Punch",
-    "desc": "",
+    "desc": "сок од портокал, сок од праска, coconut syrup, grenadine",
     "price": "130 ден.",
     "id": 37
   },
   {
     "name": "Tequila Sunrise",
-    "desc": "",
+    "desc": "текила, цеден сок од портокал, grenadine",
     "price": "220 ден.",
     "id": 38
   },
@@ -361,13 +361,13 @@
   },
   {
     "name": "Amaretto",
-    "desc": "",
+    "desc": "амарето, цеден сок од портокал",
     "price": "170 ден.",
     "id": 40
   },
   {
     "name": "Sex on the beach",
-    "desc": "",
+    "desc": "водка, сок од портокал, сок од праска, grenadine",
     "price": "220 ден.",
     "id": 41
   },
