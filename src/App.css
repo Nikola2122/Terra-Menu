@@ -65,29 +65,33 @@
     background-position: left;
     color: white;
     border: none;
-    padding: 2px 15px;
+    padding: 5px 15px;
     font-size: 20px;
     width: 150px;
     cursor: pointer;
-    transition: color 0.5s ease;
-}
-#nav button:hover {
-    animation: fillRight 0.5s forwards;
-    color: rgba(0, 84, 172, 1); /* text color after fill */
-}
-#nav button.active {
-    animation: fillRight 0.5s forwards;
-    color: rgba(0, 84, 172, 1); /* text color after fill */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
 }
 
-@keyframes fillRight {
-    from {
-        background-position: left;
-    }
-    to {
-        background-position: right;
-    }
+#nav button:hover {
+    animation: fillRight 0.5s forwards;
+    color: rgba(0, 84, 172, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
+
+#nav button.active {
+    animation: fillRight 0.5s forwards;
+    color: rgba(0, 84, 172, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+@keyframes fillRight {
+    from { background-position: left; }
+    to { background-position: right; }
+}
+
 #nav button{
     display: inline-block;
 }
@@ -165,16 +169,33 @@
 .footer-divs{
     width: 100px;
 }
-.drinkToggle{
+.special{
+    gap: 10px
+}
+.drinkToggle {
     cursor: pointer;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    text-align: left;
-    width: 500px;
-    background-color: rgba(0, 84, 172, 1);
+    width: 460px;
+    background: linear-gradient(to right, #0054AC, #B0D6FF);
     color: white;
     font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.drinkToggle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    background: linear-gradient(to right, #004080, #87CEFA);
+}
+.drinkToggle.active {
+    background: linear-gradient(to right, #004080, #87CEFA);
+    box-shadow: none;
+    transform: translateY(-2px);
 }
 #toggleLogo{
     width: 50px;
@@ -237,7 +258,7 @@
         font-size: 13px;
     }
     .drinkToggle{
-        width: 320px;
+        width: 280px;
         font-size: 18px;
         cursor: none;
     }
@@ -251,6 +272,6 @@
         margin-left: 5px;
     }
     .drink-sub{
-        font-size: 22px;
+        font-size: 20px;
     }
 }

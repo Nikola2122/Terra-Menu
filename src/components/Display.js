@@ -7,7 +7,7 @@ function Display(props) {
         <div>
             {props.whatToShow === 'Nothing' ?
                 <Nothing/> : props.whatToShow === 'Drinks' ?
-                    <div className={'menu'}>
+                    <div className={'menu special'}>
                         <DrinkMenu id={1} name={'coffee'}/>
                         <DrinkMenu id={2} name={'nonAlcoholic'}/>
                         <DrinkMenu id={3} name={'alcoholic'}/>

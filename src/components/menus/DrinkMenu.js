@@ -4,7 +4,7 @@ import nonAlcoholic from "../../data/Drinks/nonAlcoholic.json";
 import coffee from "../../data/Drinks/coffee.json";
 import DrinkItem from "../DrinkItem";
 import {AnimatePresence, motion} from "framer-motion";
-import logo from '../menus/logo.png'
+import logo from '../menus/logo_blue.png'
 import DrinkSub from "../DinkSub";
 
 const types = {
@@ -41,12 +41,11 @@ class DrinkMenu extends React.Component {
         })
         return (
             <motion.div
-                onClick={this.handleToggle}
                 initial={{opacity:0, y:-5}}
                 animate={{opacity:1, y:0}}
                 transition={{duration:0.5, delay: 0.2*this.props.id}}
             >
-                <div className={'drinkToggle'}>
+                <div onClick={this.handleToggle} className={`drinkToggle ${this.state.toggled ? 'active' : ''}`}>
                     <div className={'drinkName'}>{names[this.props.name]}</div>
                     <motion.div
                         animate={{rotate: this.state.toggled ? 180 : 0}}
