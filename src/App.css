@@ -47,6 +47,7 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    gap: 30px;
 }
 #nav{
     display: flex;
@@ -54,9 +55,8 @@
     max-width: 700px;
     width: 100%;
     gap: 30px;
-    height: 50px;
+    height: 60px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 #nav button {
     display: inline-block;
@@ -210,6 +210,7 @@
     }
     #main{
         max-width: 350px;
+        gap: 20px;
     }
     #nav button{
         width: 130px;
@@ -229,7 +230,7 @@
     #nav{
         width: 90%;
         gap: 15px;
-        margin-bottom: 80px;
+        height: auto;
     }
     .item{
         width: 300px;
