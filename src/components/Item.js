@@ -12,9 +12,11 @@ function Item(props){
                 <motion.div className={'name'}>
                     {props.name}
                 </motion.div>
-                <motion.div className={'desc'}>
-                    {props.desc}
-                </motion.div>
+                {props.desc &&
+                    <motion.div className={'desc'}>
+                        {props.desc}
+                    </motion.div>
+                 }
             </motion.div>
             <motion.div className={'price'}>
                 {props.price}
