@@ -5,7 +5,7 @@ function NavBar(props){
                 Салати
             </button>
             <button className={props.whatToShow==="Hot" ? "active" : null} onClick={() => {props.navClick("Hot")}}>
-                Топли јадења и палачинки
+                Топли јадења и десерти
             </button>
             <button className={props.whatToShow==="Pizza" ? "active" : null} onClick={() => {props.navClick("Pizza")}}>
                 Пици и пастрмајлии
