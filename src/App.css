@@ -212,7 +212,6 @@
     bottom: 16px;   /* distance from bottom */
     left: 16px;    /* distance from right */
     z-index: 9999;  /* stay on top of other elements */
-    background-color: #3696f8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,6 +223,7 @@
 .swB{
     background: none;
     border: none;
+    color: white;
 }
 .swD{
     cursor: pointer;

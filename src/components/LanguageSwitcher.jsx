@@ -5,14 +5,14 @@ export const LanguageSwitcher = (props) => {
     return (
         <div id={'langSwitch'}>
             <div
-                style={props.lang === 'en' ? {backgroundColor: 'white', color: '#0054AC'}:null}
+                style={props.lang === 'en' ? {backgroundColor: 'white'}:{backgroundColor: '#3074bb'}}
                 onClick={()=>{props.click('en')}} className={'swD'}>
 
                 <img className={'swF'} alt={''} src={flag}/>
                 <button style={props.lang === 'en' ? {color: '#0054AC'}:null} className={'swB'}>EN</button>
             </div>
             <div
-                style={props.lang === 'mk' ? {backgroundColor: 'white', color: '#0054AC'}:null}
+                style={props.lang === 'mk' ? {backgroundColor: 'white'}:{backgroundColor: '#3074bb'}}
                 onClick={()=>{props.click('mk')}} className={'swD mk'}>
 
                 <img className={'swF'} alt={''} src={flag2}/>
