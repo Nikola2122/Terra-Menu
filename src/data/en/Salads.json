@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Shopska (small/large)",
+    "desc": "cucumber, tomato, onion, cheese",
+    "price": "150/220 den.",
+    "id": 1
+  },
+  {
+    "name": "Greek (small/large)",
+    "desc": "cucumber, tomato, onion, cheese (cubes), oregano, olives",
+    "price": "150/220 den.",
+    "id": 2
+  },
+  {
+    "name": "Vitamin Salad",
+    "desc": "carrot, beetroot, cabbage, tomato, cucumber, olives",
+    "price": "200 den.",
+    "id": 3
+  },
+  {
+    "name": "Caesar",
+    "desc": "chicken steak, lettuce, croutons, Caesar dressing, parmesan",
+    "price": "240 den.",
+    "id": 4
+  },
+  {
+    "name": "Tuna Salad",
+    "desc": "lettuce, corn, tuna, bruschetta, balsamic dressing",
+    "price": "240 den.",
+    "id": 5
+  }
+]

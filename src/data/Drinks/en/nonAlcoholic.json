@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Coca-Cola",
+    "desc": "",
+    "price": "80 den.",
+    "id": 1
+  },
+  {
+    "name": "Coca-Cola Zero",
+    "desc": "",
+    "price": "80 den.",
+    "id": 2
+  },
+  {
+    "name": "Schweppes",
+    "desc": "",
+    "price": "80 den.",
+    "id": 3
+  },
+  {
+    "name": "Fanta",
+    "desc": "",
+    "price": "80 den.",
+    "id": 4
+  },
+  {
+    "name": "Sprite",
+    "desc": "",
+    "price": "80 den.",
+    "id": 5
+  },
+  {
+    "name": "Schweppes Tonic",
+    "desc": "",
+    "price": "80 den.",
+    "id": 6
+  },
+  {
+    "name": "Pepsi",
+    "desc": "",
+    "price": "80 den.",
+    "id": 7
+  },
+  {
+    "name": "Pepsi Max",
+    "desc": "",
+    "price": "80 den.",
+    "id": 1698
+  },
+  {
+    "name": "Gazoza (soda)",
+    "desc": "",
+    "price": "80 den.",
+    "id": 8
+  },
+  {
+    "name": "Cedevita",
+    "desc": "",
+    "price": "60 den.",
+    "id": 9
+  },
+  {
+    "name": "Iced Tea (Peach/Lemon)",
+    "desc": "",
+    "price": "80 den.",
+    "id": 10
+  },
+  {
+    "name": "Freshly Squeezed Juice (Orange/Lemon)",
+    "desc": "",
+    "price": "120 den.",
+    "id": 11
+  },
+  {
+    "name": "Freshly Squeezed Mixed Juice",
+    "desc": "",
+    "price": "140 den.",
+    "id": 12
+  },
+  {
+    "name": "Soda (Orange/Lemon/Mojito)",
+    "desc": "",
+    "price": "80 den.",
+    "id": 13
+  },
+  {
+    "name": "Knjaz Miloš Sparkling Water 0.25L",
+    "desc": "",
+    "price": "60 den.",
+    "id": 14
+  },
+  {
+    "name": "Aqua Viva Still Water 0.25L",
+    "desc": "",
+    "price": "60 den.",
+    "id": 15
+  },
+  {
+    "name": "Pelisterka Still/Sparkling Water 1L",
+    "desc": "",
+    "price": "90 den.",
+    "id": 16
+  },
+  {
+    "name": "Nectar (Orange/Peach/Apple/Blueberry)",
+    "desc": "",
+    "price": "80 den.",
+    "id": 17
+  }
+]

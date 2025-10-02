@@ -1,61 +1,82 @@
 import React from "react";
-import alcoholic from "../../data/Drinks/alcoholic.json";
-import nonAlcoholic from "../../data/Drinks/nonAlcoholic.json";
-import coffee from "../../data/Drinks/coffee.json";
 import DrinkItem from "../DrinkItem";
-import {AnimatePresence, motion} from "framer-motion";
-import logo from '../menus/logo_blue.png'
+import { AnimatePresence, motion } from "framer-motion";
+import logo from "../menus/logo_blue.png";
 import DrinkSub from "../DinkSub";
-
-const types = {
-    'alcoholic': alcoholic,
-    'nonAlcoholic': nonAlcoholic,
-    'coffee': coffee
-}
-const names = {
-    'alcoholic': 'Алкохолни пијалоци',
-    'nonAlcoholic': 'Безалкохолни пијалоци',
-    'coffee': 'Топли пијалоци'
-}
 
 class DrinkMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            toggled: false
+            toggled: false,
+            drinks: null,   // will load dynamically
+        };
+    }
+
+    componentDidMount() {
+        this.loadData();
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.lang !== this.props.lang) {
+            this.loadData();
+        }
+    }
+
+    async loadData() {
+        const { lang, name } = this.props;
+        try {
+            // Dynamic import based on language + type
+            const data = await import(`../../data/Drinks/${lang}/${name}.json`);
+            this.setState({ drinks: data.default });
+        } catch (err) {
+            console.error("Error loading drinks data:", err);
         }
     }
 
     handleToggle = () => {
-        this.setState((prevState) => {
-            return {
-                toggled: !prevState.toggled
-            }
-        });
-    }
+        this.setState((prevState) => ({
+            toggled: !prevState.toggled,
+        }));
+    };
 
     render() {
-        const components = types[this.props.name].map((el) => {
-            return el.price !== 'sub' ? <DrinkItem id={el.id} key={el.id + 'dr'} name={el.name} desc={el.desc} price={el.price}/> :
-                <DrinkSub key={el.id} name={el.name}/>
-        })
+        const { drinks, toggled } = this.state;
+        const { lang, name, id } = this.props;
+
+        const names = {
+            alcoholic: lang === "mk" ? "Алкохолни пијалоци" : "Alcoholic drinks",
+            nonAlcoholic: lang === "mk" ? "Безалкохолни пијалоци" : "Nonalcoholic drinks",
+            coffee: lang === "mk" ? "Топли пијалоци" : "Hot drinks",
+        };
+
+        const components =
+            drinks?.map((el) =>
+                el.price !== "sub" ? (
+                    <DrinkItem id={el.id} key={el.id + "dr"} name={el.name} desc={el.desc} price={el.price} />
+                ) : (
+                    <DrinkSub key={el.id} name={el.name} />
+                )
+            ) ?? null;
+
         return (
             <motion.div
-                initial={{opacity:0, y:-5}}
-                animate={{opacity:1, y:0}}
-                transition={{duration:0.5, delay: 0.2*this.props.id}}
+                initial={{ opacity: 0, y: -5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 * id }}
             >
-                <div onClick={this.handleToggle} className={`drinkToggle ${this.state.toggled ? 'active' : ''}`}>
-                    <div className={'drinkName'}>{names[this.props.name]}</div>
+                <div onClick={this.handleToggle} className={`drinkToggle ${toggled ? "active" : ""}`}>
+                    <div className="drinkName">{names[name]}</div>
                     <motion.div
-                        animate={{rotate: this.state.toggled ? 180 : 0}}
-                        transition={{ease: "easeInOut", duration: 0.3}}
+                        animate={{ rotate: toggled ? 180 : 0 }}
+                        transition={{ ease: "easeInOut", duration: 0.3 }}
                     >
-                        <img id={'toggleLogo'} alt={''} src={logo}/>
+                        <img id="toggleLogo" alt="" src={logo} />
                     </motion.div>
                 </div>
+
                 <AnimatePresence initial={false}>
-                    {this.state.toggled && (
+                    {toggled && drinks && (
                         <motion.div
                             key="content"
                             initial={{ height: 0, opacity: 0 }}
@@ -73,4 +94,4 @@ class DrinkMenu extends React.Component {
     }
 }
 
-export default DrinkMenu
+export default DrinkMenu;

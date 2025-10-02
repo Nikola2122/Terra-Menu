@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Espresso",
+    "desc": "",
+    "price": "60 den.",
+    "id": 1
+  },
+  {
+    "name": "Decaf Espresso",
+    "desc": "",
+    "price": "60 den.",
+    "id": 2
+  },
+  {
+    "name": "Macchiato (small/large)",
+    "desc": "",
+    "price": "60/70 den.",
+    "id": 3
+  },
+  {
+    "name": "Cappuccino",
+    "desc": "",
+    "price": "80 den.",
+    "id": 4
+  },
+  {
+    "name": "Latte",
+    "desc": "",
+    "price": "80 den.",
+    "id": 5
+  },
+  {
+    "name": "Fredo Espresso/Cappuccino",
+    "desc": "",
+    "price": "100/120 den.",
+    "id": 6
+  },
+  {
+    "name": "Nescafe/Nescafe flavored",
+    "desc": "",
+    "price": "90/100 den.",
+    "id": 7
+  },
+  {
+    "name": "Mafioso Coffee",
+    "desc": "",
+    "price": "90 den.",
+    "id": 8
+  },
+  {
+    "name": "Americano",
+    "desc": "",
+    "price": "70 den.",
+    "id": 9
+  },
+  {
+    "name": "Terra Coffee",
+    "desc": "",
+    "price": "100 den.",
+    "id": 10
+  },
+  {
+    "name": "Tea without/with honey",
+    "desc": "",
+    "price": "50/60 den.",
+    "id": 11
+  },
+  {
+    "name": "Hot Chocolate without/with Plazma",
+    "desc": "",
+    "price": "120/140 den.",
+    "id": 12
+  },
+  {
+    "name": "Hot Chocolate with Oreo",
+    "desc": "",
+    "price": "150 den.",
+    "id": 13
+  },
+  {
+    "name": "Salep",
+    "desc": "",
+    "price": "80 den.",
+    "id": 14
+  },
+  {
+    "name": "Children's Coffee",
+    "desc": "",
+    "price": "0 den.",
+    "id": 15
+  }
+]

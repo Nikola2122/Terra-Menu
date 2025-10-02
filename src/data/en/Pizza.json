@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Margherita",
+    "desc": "pelate sauce, yellow cheese",
+    "price": "240 den.",
+    "id": 1
+  },
+  {
+    "name": "Capricciosa",
+    "desc": "pelate sauce, yellow cheese, ham, mushrooms",
+    "price": "280 den.",
+    "id": 2
+  },
+  {
+    "name": "Pepperoni",
+    "desc": "pelate sauce, yellow cheese, kulen sausage, olives",
+    "price": "300 den.",
+    "id": 3
+  },
+  {
+    "name": "Terra Pizza",
+    "desc": "pelate sauce, yellow cheese, ham, pork neck, mushrooms",
+    "price": "320 den.",
+    "id": 4
+  },
+  {
+    "name": "Vegan Pizza",
+    "desc": "pelate sauce, vegan cheese, mushrooms, zucchini, olives",
+    "price": "240 den.",
+    "id": 5
+  },
+  {
+    "name": "Tuna Pizza",
+    "desc": "pelate sauce, yellow cheese, tuna, mushrooms, olives",
+    "price": "280 den.",
+    "id": 6
+  },
+  {
+    "name": "Pastrmajlija",
+    "desc": "pork/chicken meat, eggs, cheese",
+    "price": "260 den.",
+    "id": 7
+  }
+]

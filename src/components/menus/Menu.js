@@ -1,24 +1,28 @@
+import React, { useEffect, useState } from "react";
 import Item from "../Item";
-import Hot from "../../data/Hot.json";
-import Salads from "../../data/Salads.json"
-import Pizza from "../../data/Pizza.json"
 
-const types = {
-    'Hot': Hot,
-    'Salads': Salads,
-    'Pizza': Pizza
+function Menu(props) {
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        const lang = props.lang
+        async function loadData() {
+            try {
+                const module = await import(`../../data/${lang}/${props.whatToShow}.json`);
+                setItems(module.default);
+            } catch (err) {
+                console.error("Failed to load menu data:", err);
+                setItems([]); // fallback
+            }
+        }
+        loadData();
+    }, [props.lang, props.whatToShow]); // reload whenever the menu type changes
+
+    const components = items.map((el) => (
+        <Item id={el.id} key={el.id + props.whatToShow} name={el.name} desc={el.desc} price={el.price} />
+    ));
+
+    return <div className="menu">{components}</div>;
 }
 
-function Menu(props){
-    const current = types[props.whatToShow]
-    const components = current.map((el)=>{
-        return <Item id={el.id} key={el.id+props.whatToShow} name={el.name} desc={el.desc} price={el.price} />
-    })
-    return (
-        <div className={"menu"}>
-            {components}
-        </div>
-    )
-}
-
-export default Menu
+export default Menu;

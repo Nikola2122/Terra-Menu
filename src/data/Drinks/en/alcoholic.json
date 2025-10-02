@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Beer",
+    "desc": "",
+    "price": "sub",
+    "id": 100
+  },
+  {
+    "name": "Skopsko 0.5L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 1
+  },
+  {
+    "name": "Skopsko Smut 0.5L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 2
+  },
+  {
+    "name": "Zlaten Dab 0.5L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 3
+  },
+  {
+    "name": "Zlaten Dab Amber 0.5L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 4
+  },
+  {
+    "name": "Zlaten Dab Draft 0.5L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 5
+  },
+  {
+    "name": "Nikšičko 0.5L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 6
+  },
+  {
+    "name": "Amstel 0.5L",
+    "desc": "",
+    "price": "120 den.",
+    "id": 7
+  },
+  {
+    "name": "Tuborg 0.33L",
+    "desc": "",
+    "price": "120 den.",
+    "id": 8
+  },
+  {
+    "name": "Carlsberg 0.33L",
+    "desc": "",
+    "price": "140 den.",
+    "id": 9
+  },
+  {
+    "name": "Heineken 0.33L",
+    "desc": "",
+    "price": "140 den.",
+    "id": 10
+  },
+  {
+    "name": "Budweiser Budvar 0.33L",
+    "desc": "",
+    "price": "120 den.",
+    "id": 13099
+  },
+  {
+    "name": "Wine",
+    "desc": "",
+    "price": "sub",
+    "id": 1034
+  },
+  {
+    "name": "Alexandria White/Rose/Red 0.187L",
+    "desc": "",
+    "price": "190 den.",
+    "id": 42
+  },
+  {
+    "name": "Alexandria White/Rose/Red 0.75L",
+    "desc": "",
+    "price": "750 den.",
+    "id": 43
+  },
+  {
+    "name": "Traminac 0.187L",
+    "desc": "",
+    "price": "190 den.",
+    "id": 44
+  },
+  {
+    "name": "Traminac 0.75L",
+    "desc": "",
+    "price": "750 den.",
+    "id": 45
+  },
+  {
+    "name": "Temjanika 0.187L",
+    "desc": "",
+    "price": "190 den.",
+    "id": 46
+  },
+  {
+    "name": "Temjanika 0.75L",
+    "desc": "",
+    "price": "750 den.",
+    "id": 47
+  },
+  {
+    "name": "Tga za Jug 0.187L",
+    "desc": "",
+    "price": "190 den.",
+    "id": 48
+  },
+  {
+    "name": "Tga za Jug 0.75L",
+    "desc": "",
+    "price": "750 den.",
+    "id": 49
+  },
+  {
+    "name": "Draft Wine 0.2/0.5L",
+    "desc": "",
+    "price": "100/200 den.",
+    "id": 50
+  },
+  {
+    "name": "Spirits",
+    "desc": "",
+    "price": "sub",
+    "id": 101
+  },
+  {
+    "name": "Stock 0.04L",
+    "desc": "",
+    "price": "90 den.",
+    "id": 11
+  },
+  {
+    "name": "Badel Cognac 0.04L",
+    "desc": "",
+    "price": "70 den.",
+    "id": 12
+  },
+  {
+    "name": "Yellow Grape Rakija 0.04L",
+    "desc": "",
+    "price": "60 den.",
+    "id": 13
+  },
+  {
+    "name": "Vigor Vodka 0.04L",
+    "desc": "",
+    "price": "70 den.",
+    "id": 14
+  },
+  {
+    "name": "Smirnoff Vodka 0.04L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 15
+  },
+  {
+    "name": "Absolut Vodka 0.04L",
+    "desc": "",
+    "price": "110 den.",
+    "id": 16
+  },
+  {
+    "name": "Belvedere Vodka 0.04L",
+    "desc": "",
+    "price": "350 den.",
+    "id": 126
+  },
+  {
+    "name": "Sax/Sax Pink Gin 0.04L",
+    "desc": "",
+    "price": "70 den.",
+    "id": 17
+  },
+  {
+    "name": "Gordon's Gin 0.04L",
+    "desc": "",
+    "price": "110 den.",
+    "id": 18
+  },
+  {
+    "name": "Gordon's Pink Gin 0.04L",
+    "desc": "",
+    "price": "120 den.",
+    "id": 19
+  },
+  {
+    "name": "Tsantali Ouzo 0.04L",
+    "desc": "",
+    "price": "70 den.",
+    "id": 20
+  },
+  {
+    "name": "Plumari Ouzo 0.04L",
+    "desc": "",
+    "price": "90 den.",
+    "id": 21
+  },
+  {
+    "name": "Rubin Brandy 0.04L",
+    "desc": "",
+    "price": "80 den.",
+    "id": 22
+  },
+  {
+    "name": "Mastika 0.04L",
+    "desc": "",
+    "price": "70 den.",
+    "id": 23
+  },
+  {
+    "name": "Pelinkovec 0.04L",
+    "desc": "",
+    "price": "110 den.",
+    "id": 162
+  },
+  {
+    "name": "Campari 0.04L",
+    "desc": "",
+    "price": "120 den.",
+    "id": 1268
+  },
+  {
+    "name": "Jäger 0.04L",
+    "desc": "",
+    "price": "110 den.",
+    "id": 166
+  },
+  {
+    "name": "Badel Rum 0.04L",
+    "desc": "",
+    "price": "80 den.",
+    "id": 1622
+  },
+  {
+    "name": "Captain Morgan Rum 0.04L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 22
+  },
+  {
+    "name": "Martini 0.04L",
+    "desc": "",
+    "price": "100 den.",
+    "id": 23
+  },
+  {
+    "name": "Johnny Walker Red Label 0.04L",
+    "desc": "",
+    "price": "150 den.",
+    "id": 24
+  },
+  {
+    "name": "Johnny Walker Black Label 0.04L",
+    "desc": "",
+    "price": "300 den.",
+    "id": 25
+  },
+  {
+    "name": "Ballantine's Whiskey 0.04L",
+    "desc": "",
+    "price": "130 den.",
+    "id": 22
+  },
+  {
+    "name": "Jameson Whiskey 0.04L",
+    "desc": "",
+    "price": "180 den.",
+    "id": 26
+  },
+  {
+    "name": "J&B Whiskey 0.04L",
+    "desc": "",
+    "price": "180 den.",
+    "id": 27
+  },
+  {
+    "name": "Jack Daniel's Whiskey 0.04L",
+    "desc": "",
+    "price": "200 den.",
+    "id": 28
+  },
+  {
+    "name": "Jim Beam Bourbon 0.04L",
+    "desc": "",
+    "price": "180 den.",
+    "id": 29
+  },
+  {
+    "name": "Chivas Regal 12 Whiskey 0.04L",
+    "desc": "",
+    "price": "300 den.",
+    "id": 30
+  },
+  {
+    "name": "Cocktails",
+    "desc": "",
+    "price": "sub",
+    "id": 1
+  },
+  {
+    "name": "Gin Tonic (Sax/Gordon's)",
+    "desc": "",
+    "price": "110/150 den.",
+    "id": 31
+  },
+  {
+    "name": "Hugo",
+    "desc": "elderflower, prosecco, sparkling water",
+    "price": "200 den.",
+    "id": 32
+  },
+  {
+    "name": "Mojito",
+    "desc": "white rum, brown sugar, mint, mojito syrup, triple sec, sparkling water",
+    "price": "200 den.",
+    "id": 33
+  },
+  {
+    "name": "Aperol",
+    "desc": "Aperol, prosecco, sparkling water",
+    "price": "200 den.",
+    "id": 34
+  },
+  {
+    "name": "Blue Lagoon",
+    "desc": "vodka, lemon juice, Sprite, blue curacao",
+    "price": "150 den.",
+    "id": 35
+  },
+  {
+    "name": "Pina Colada",
+    "desc": "white rum, coconut syrup, triple sec, whipped cream, pineapple juice",
+    "price": "220 den.",
+    "id": 36
+  },
+  {
+    "name": "Fruit Punch",
+    "desc": "orange juice, peach juice, coconut syrup, grenadine",
+    "price": "130 den.",
+    "id": 37
+  },
+  {
+    "name": "Tequila Sunrise",
+    "desc": "tequila, orange juice, grenadine",
+    "price": "220 den.",
+    "id": 38
+  },
+  {
+    "name": "Margarita",
+    "desc": "tequila, lime juice, triple sec",
+    "price": "200 den.",
+    "id": 39
+  },
+  {
+    "name": "Amaretto",
+    "desc": "amaretto, orange juice",
+    "price": "170 den.",
+    "id": 40
+  },
+  {
+    "name": "Sex on the Beach",
+    "desc": "vodka, orange juice, peach juice, grenadine",
+    "price": "220 den.",
+    "id": 41
+  },
+  {
+    "name": "Negroni",
+    "desc": "martini rosso, Campari, gin",
+    "price": "200 den.",
+    "id": 42
+  }
+]

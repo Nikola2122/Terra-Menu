@@ -2,16 +2,16 @@ function NavBar(props){
     return (
         <div id={'nav'}>
             <button className={props.whatToShow==="Salads" ? "active" : null} onClick={() => {props.navClick("Salads")}}>
-                Салати
+                {props.lang === 'mk' ? 'Салати' : 'Salads'}
             </button>
             <button className={props.whatToShow==="Hot" ? "active" : null} onClick={() => {props.navClick("Hot")}}>
-                Топли јадења и десерти
+                {props.lang === 'mk' ? 'Топли јадења и десерти' : 'Hot dishes and desserts'}
             </button>
             <button className={props.whatToShow==="Pizza" ? "active" : null} onClick={() => {props.navClick("Pizza")}}>
-                Пици и пастрмајлии
+                {props.lang === 'mk' ? 'Пици и пастрмајлии' : 'Pizzas and Pastrmajlija'}
             </button>
             <button className={props.whatToShow==="Drinks" ? "active" : null} onClick={() => {props.navClick("Drinks")}}>
-                Пијалоци
+                {props.lang === 'mk' ? 'Пијалоци' : 'Drinks'}
             </button>
         </div>
     )

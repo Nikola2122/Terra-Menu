@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Chicken Wings",
+    "desc": "chicken wings, Mexican sauce",
+    "price": "200 den.",
+    "id": 1
+  },
+  {
+    "name": "Chicken Fingers",
+    "desc": "eggs, breadcrumbs, chicken steak, tartar sauce",
+    "price": "200 den.",
+    "id": 2
+  },
+  {
+    "name": "French Fries / Cheese Fries",
+    "desc": "potatoes / potatoes, sheep cheese",
+    "price": "150/160 den.",
+    "id": 3
+  },
+  {
+    "name": "Fried Platter",
+    "desc": "chicken fingers, fried yellow cheese, fried zdenski cheese, fried cheese, fried zucchini, fries, tartar sauce",
+    "price": "600 den.",
+    "id": 4
+  },
+  {
+    "name": "Fried Yellow Cheese",
+    "desc": "eggs, breadcrumbs, yellow cheese",
+    "price": "130 den.",
+    "id": 5
+  },
+  {
+    "name": "Fried Zdenski Cheese",
+    "desc": "eggs, breadcrumbs, zdenski cheese",
+    "price": "130 den.",
+    "id": 6
+  },
+  {
+    "name": "Fried Zucchini",
+    "desc": "eggs, breadcrumbs, zucchini",
+    "price": "130 den.",
+    "id": 7
+  },
+  {
+    "name": "Appetizer Platter",
+    "desc": "yellow cheese, pork neck, kulen sausage, prosciutto, olives",
+    "price": "300 den.",
+    "id": 8
+  },
+  {
+    "name": "Melted Cheese with Small Breads",
+    "desc": "cow cheese, pelate sauce, ham, pork neck, yellow cheese",
+    "price": "290 den.",
+    "id": 9
+  },
+  {
+    "name": "Fried Sausage with Mustard and Small Breads",
+    "desc": "sausage, mustard",
+    "price": "290 den.",
+    "id": 10
+  },
+  {
+    "name": "Small Breads",
+    "desc": "",
+    "price": "100 den.",
+    "id": 11
+  },
+  {
+    "name": "Pancake with Nutella",
+    "desc": "",
+    "price": "150 den.",
+    "id": 12
+  },
+  {
+    "name": "Pancake with Nutella and Plazma/Banana",
+    "desc": "",
+    "price": "180 den.",
+    "id": 13
+  },
+  {
+    "name": "Pancake with Nutella, Plazma, and Banana",
+    "desc": "",
+    "price": "200 den.",
+    "id": 14
+  },
+  {
+    "name": "Crunchy Pancake with Hazelnuts",
+    "desc": "",
+    "price": "180 den.",
+    "id": 15
+  },
+  {
+    "name": "Pancake with Nutella and Forest Fruits",
+    "desc": "",
+    "price": "180 den.",
+    "id": 16
+  },
+  {
+    "name": "Piroshka",
+    "desc": "ham, yellow cheese, sour cream",
+    "price": "120 den.",
+    "id": 17
+  },
+  {
+    "name": "Terra Piroshka",
+    "desc": "ham, yellow cheese, pork neck, mushrooms, sour cream",
+    "price": "150 den.",
+    "id": 18
+  },
+  {
+    "name": "Cheesecake",
+    "desc": "",
+    "price": "130 den.",
+    "id": 19
+  }
+]
