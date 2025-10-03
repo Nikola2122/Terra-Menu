@@ -28,5 +28,11 @@
     "desc": "lettuce, corn, tuna, bruschetta, balsamic dressing",
     "price": "240 den.",
     "id": 5
+  },
+  {
+    "name": "Tarator",
+    "desc": "cucumber, sour cream, garlic",
+    "price": "230 den.",
+    "id": 6
   }
 ]
