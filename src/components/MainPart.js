@@ -27,8 +27,8 @@ class MainPart extends React.Component{
     render() {
         return (
             <div id={'main'}>
-                <NavBar lang={this.props.lang} whatToShow={this.state.displayed} navClick={this.handleClick} />
-                <Display lang={this.props.lang} whatToShow={this.state.displayed} />
+                <NavBar whatToShow={this.state.displayed} navClick={this.handleClick} />
+                <Display whatToShow={this.state.displayed} />
             </div>
         )
     }

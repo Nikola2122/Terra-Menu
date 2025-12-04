@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Item from "../Item";
+import {LangContext} from "../LangContext";
 
 function Menu(props) {
     const [items, setItems] = useState([]);
+    const lang = useContext(LangContext)
 
     useEffect(() => {
-        const lang = props.lang
         async function loadData() {
             try {
                 const module = await import(`../../data/${lang}/${props.whatToShow}.json`);
@@ -16,7 +17,7 @@ function Menu(props) {
             }
         }
         loadData();
-    }, [props.lang, props.whatToShow]); // reload whenever the menu type changes
+    }, [lang, props.whatToShow]); // reload whenever the menu type changes
 
     const components = items.map((el) => (
         <Item id={el.id} key={el.id + props.whatToShow} name={el.name} desc={el.desc} price={el.price} />

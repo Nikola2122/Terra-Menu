@@ -3,8 +3,10 @@ import DrinkItem from "../DrinkItem";
 import { AnimatePresence, motion } from "framer-motion";
 import logo from "../menus/logo_blue.png";
 import DrinkSub from "../DinkSub";
+import {LangContext} from "../LangContext";
 
 class DrinkMenu extends React.Component {
+    static contextType = LangContext
     constructor(props) {
         super(props);
         this.state = {
@@ -14,17 +16,20 @@ class DrinkMenu extends React.Component {
     }
 
     componentDidMount() {
+        this.prevLang = this.context
         this.loadData();
     }
 
     componentDidUpdate(prevProps) {
-        if (prevProps.lang !== this.props.lang) {
+        if (this.prevLang !== this.context) {
+            this.prevLang = this.context
             this.loadData();
         }
     }
 
     async loadData() {
-        const { lang, name } = this.props;
+        const lang = this.context
+        const name = this.props.name;
         try {
             // Dynamic import based on language + type
             const data = await import(`../../data/Drinks/${lang}/${name}.json`);
@@ -42,7 +47,8 @@ class DrinkMenu extends React.Component {
 
     render() {
         const { drinks, toggled } = this.state;
-        const { lang, name, id } = this.props;
+        const lang = this.context
+        const { name, id } = this.props;
 
         const names = {
             alcoholic: lang === "mk" ? "Алкохолни пијалоци" : "Alcoholic drinks",

@@ -5,8 +5,8 @@ function DrinkItem(props){
                 <div className={'name-drink'}>
                     {props.name}
                 </div>
-                <div style={!props.desc ? {display: 'none'} : null } className={'desc'}>
-                    {props.desc}
+                <div className={'desc'}>
+                    {!!props.desc && props.desc}
                 </div>
             </div>
             <div className={'price'}>
