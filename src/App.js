@@ -4,19 +4,20 @@ import MainPart from "./components/MainPart";
 import Footer from "./components/Footer";
 import {LanguageSwitcher} from "./components/LanguageSwitcher";
 import {useState} from "react";
+import {LangContext} from "./components/LangContext";
+
 function App() {
-    const [lang,setLang] = useState('mk')
-    const handleLang = (value) => {
-        setLang(value)
-    }
+    const [lang, setLang] = useState('mk')
 
     return (
-        <div id={'wrapper'}>
-            <Header />
-            <MainPart lang={lang} />
-            <Footer lang={lang} />
-            <LanguageSwitcher lang={lang} click={handleLang} />
-        </div>
+        <LangContext.Provider value={lang}>
+            <div id={'wrapper'}>
+                <Header/>
+                <MainPart/>
+                <Footer/>
+                <LanguageSwitcher click={setLang}/>
+            </div>
+        </LangContext.Provider>
     )
 }
 
