@@ -1,9 +1,9 @@
 import React from "react";
 import DrinkItem from "../DrinkItem";
 import { AnimatePresence, motion } from "framer-motion";
-import logo from "../menus/logo_blue.png";
+import logo from "../../assets/images/logo_blue.png";
 import DrinkSub from "../DinkSub";
-import {LangContext} from "../LangContext";
+import {LangContext} from "../../utils/LangContext";
 
 class DrinkMenu extends React.Component {
     static contextType = LangContext

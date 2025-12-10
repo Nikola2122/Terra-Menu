@@ -1,4 +1,4 @@
-import {LangContext} from "./LangContext";
+import {LangContext} from "../utils/LangContext";
 import {useContext} from "react";
 function NavBar(props){
     const lang = useContext(LangContext)

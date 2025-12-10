@@ -1,4 +1,4 @@
-import logo from './logo_blue.png'
+import logo from '../../assets/images/logo_blue.png'
 import {motion} from "framer-motion";
 
 function Nothing() {

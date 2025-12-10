@@ -1,10 +1,10 @@
-import './App.css';
+import './styles/App.css';
 import Header from "./components/Header";
 import MainPart from "./components/MainPart";
 import Footer from "./components/Footer";
 import {LanguageSwitcher} from "./components/LanguageSwitcher";
 import {useState} from "react";
-import {LangContext} from "./components/LangContext";
+import {LangContext} from "./utils/LangContext";
 
 function App() {
     const [lang, setLang] = useState('mk')
@@ -15,7 +15,7 @@ function App() {
                 <Header/>
                 <MainPart/>
                 <Footer/>
-                <LanguageSwitcher click={setLang}/>
+                <LanguageSwitcher handleClick={setLang}/>
             </div>
         </LangContext.Provider>
     )

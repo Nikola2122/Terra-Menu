@@ -1,23 +1,24 @@
 import React, {useContext, useEffect, useState} from "react";
 import Item from "../Item";
-import {LangContext} from "../LangContext";
+import {LangContext} from "../../utils/LangContext";
 
 function Menu(props) {
     const [items, setItems] = useState([]);
     const lang = useContext(LangContext)
 
-    useEffect(() => {
-        async function loadData() {
-            try {
-                const module = await import(`../../data/${lang}/${props.whatToShow}.json`);
-                setItems(module.default);
-            } catch (err) {
-                console.error("Failed to load menu data:", err);
-                setItems([]); // fallback
-            }
+    async function loadData(lang, whatShow) {
+        try {
+            const module = await import(`../../data/${lang}/${whatShow}.json`);
+            setItems(module.default);
+        } catch (err) {
+            console.error("Failed to load menu data:", err);
+            setItems([]);
         }
-        loadData();
-    }, [lang, props.whatToShow]); // reload whenever the menu type changes
+    }
+
+    useEffect(() => {
+        loadData(lang, props.whatToShow);
+    }, [lang, props.whatToShow]);
 
     const components = items.map((el) => (
         <Item id={el.id} key={el.id + props.whatToShow} name={el.name} desc={el.desc} price={el.price} />

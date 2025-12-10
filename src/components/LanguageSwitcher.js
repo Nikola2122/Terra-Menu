@@ -1,7 +1,7 @@
-import flag from './Flag_of_the_United_States.svg.png'
-import flag2 from './Flag_of_North_Macedonia.svg'
+import flag from '../assets/images/Flag_of_the_United_States.svg.png'
+import flag2 from '../assets/images/Flag_of_North_Macedonia.svg'
 import {useContext} from "react";
-import {LangContext} from "./LangContext";
+import {LangContext} from "../utils/LangContext";
 
 export const LanguageSwitcher = (props) => {
     const lang = useContext(LangContext)
@@ -10,14 +10,14 @@ export const LanguageSwitcher = (props) => {
         <div id={'langSwitch'}>
             <div
                 style={lang === 'en' ? {backgroundColor: 'white'}:{backgroundColor: '#3074bb'}}
-                onClick={()=>{props.click('en')}} className={'swD'}>
+                onClick={()=>{props.handleClick('en')}} className={'swD'}>
 
                 <img className={'swF'} alt={''} src={flag}/>
                 <button style={lang === 'en' ? {color: '#0054AC'}:null} className={'swB'}>EN</button>
             </div>
             <div
                 style={lang === 'mk' ? {backgroundColor: 'white'}:{backgroundColor: '#3074bb'}}
-                onClick={()=>{props.click('mk')}} className={'swD mk'}>
+                onClick={()=>{props.handleClick('mk')}} className={'swD mk'}>
 
                 <img className={'swF'} alt={''} src={flag2}/>
                 <button style={lang === 'mk' ? {color: '#0054AC'}:null} className={'swB'}>MK</button>
