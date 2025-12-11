@@ -1,13 +1,18 @@
-function DrinkItem(props){
+function DrinkItem(props) {
     return (
         <div className={'item'}>
             <div className={'name-desc'}>
                 <div className={'name-drink'}>
                     {props.name}
                 </div>
-                <div className={'desc'}>
-                    {!!props.desc && props.desc}
-                </div>
+                {
+                    props.desc &&
+                    (
+                        <div className={'desc'}>
+                            {props.desc}
+                        </div>
+                    )
+                }
             </div>
             <div className={'price'}>
                 {props.price}
