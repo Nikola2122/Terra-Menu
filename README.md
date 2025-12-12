@@ -1,24 +1,24 @@
-# 🍽️ React Menu App
+# React Menu App
 
 A simple and responsive **React-based Menu Application**, designed for filtering dishes by categories and providing an elegant UI experience.
 
-🔗 **Live:** https://terra-menu.netlify.app/
+**Live:** https://terra-menu.netlify.app/
 
-📍 **Used by:** Terra Bar & Kitchen — Saint Nikole
-
----
-
-## 🚀 Features
-- ⚛️ Client-side routing — menus switch without page refresh
-- 📂 Category-based menu filtering
-- ⚡ Fast, clean UI built using reusable React components
-- 📱 Fully responsive design for all devices
-- 🎞️ Smooth UI animations
-- 🌍 Multilanguage support (multiple languages available)
+**Used by:** Terra Bar & Kitchen — Saint Nikole
 
 ---
 
-## 🛠️ Tech Stack
+## Features
+- Client-side routing — menus switch without page refresh
+- Category-based menu filtering
+- Fast, clean UI built using reusable React components
+- Fully responsive design for all devices
+- Smooth UI animations
+- Multilanguage support (multiple languages available)
+
+---
+
+## Tech Stack
 | Tech                        | Purpose |
 |-----------------------------|----------|
 | **React**                   | Component-based UI |
@@ -30,7 +30,7 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/Nikola2122/Terra-Menu.git
@@ -39,11 +39,11 @@ npm install
 npm start
 ```
 
-Runs on 👉 `http://localhost:3000`
+Runs on `http://localhost:3000`
 
 ---
 
-## 📁 Project Structure Example
+## Project Structure Example
 ```
 src
 │   App.js
@@ -104,17 +104,17 @@ src
 
 ---
 
-## 🧩 Usage
+## Usage
 1. Select a category from the navigation bar
 2. View menu items dynamically rendered
 3. Responsive, smooth interaction
 
 ---
 
-## 🔥 Possible Future Upgrades
-- 🛒 Add to cart functionality
-- ⭐ Save favorite dishes
-- 📅 Reservation system
-- 🌙 Dark/Light mode toggle
-- 🔗 Switch to API-backed data instead of local JSON files
+## Possible Future Upgrades
+- Add to cart functionality
+- Save favorite dishes
+- Reservation system
+- Dark/Light mode toggle
+- Switch to API-backed data instead of local JSON files
 
