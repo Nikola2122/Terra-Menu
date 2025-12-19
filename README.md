@@ -63,6 +63,7 @@ src
 │           Flag_of_the_United_States.svg.png
 │           logo.png
 │           logo_blue.png
+│           spinner.png
 │           
 ├───components
 │   │   DinkSub.js
