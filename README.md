@@ -1,6 +1,6 @@
 # React Menu App
 
-A simple and responsive **React-based Menu Application**, designed for filtering dishes by categories and providing an elegant UI experience.
+A simple and responsive **React-based Menu Application**, designed for filtering dishes by categories, providing an elegant UI experience and more.
 
 **Live:** https://terra-menu.netlify.app/
 
@@ -9,7 +9,8 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 ---
 
 ## Features
-- Client-side routing — menus switch without page refresh
+- Client-side routing using **React Router** — menus and gallery switch without page refresh
+- Gallery route (`/random-image`) fetching **a random image dynamically from a Netlify serverless API endpoint**
 - Category-based menu filtering
 - Fast, clean UI built using reusable React components
 - Fully responsive design for all devices
@@ -24,9 +25,9 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 | **React**                   | Component-based UI |
 | **JavaScript / JSX**        | App logic & rendering |
 | **CSS / Styled Components** | Styling  |
-| **Netlify**                 | Deployment & Hosting |
-| **Local JSON files**                 | Menu “database” / static data |
-
+| **React Router**            | Client-side routing |
+| **Netlify**                 | Deployment & Hosting, serverless API |
+| **Local JSON files**        | Menu "database" / static data |
 
 ---
 
@@ -45,6 +46,13 @@ Runs on `http://localhost:3000`
 
 ## Project Structure Example
 ```
+netlify
+└───functions
+│   │   images.json
+│   │   randomImage.js
+│   │   
+│   └───images
+│                 
 src
 │   App.js
 │   index.js
@@ -66,6 +74,8 @@ src
 │   │   LanguageSwitcher.js
 │   │   MainPart.js
 │   │   NavBar.js
+│   │   RandomImage.js
+│   │   RoutesWrapper.js
 │   │   
 │   └───menus
 │           DrinkMenu.js
@@ -107,7 +117,8 @@ src
 ## Usage
 1. Select a category from the navigation bar
 2. View menu items dynamically rendered
-3. Responsive, smooth interaction
+3. Navigate to the gallery route to see a random image of the place
+4. Fully responsive, smooth interaction
 
 ---
 
@@ -116,5 +127,4 @@ src
 - Save favorite dishes
 - Reservation system
 - Dark/Light mode toggle
-- Switch to API-backed data instead of local JSON files
-
+- Switch to API-backed data for menus instead of local JSON files

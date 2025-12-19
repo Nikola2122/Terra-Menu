@@ -1,7 +1,15 @@
 import {LangContext} from "../utils/LangContext";
 import {useContext} from "react";
+import {useNavigate} from "react-router-dom";
 function NavBar(props){
     const lang = useContext(LangContext)
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        setTimeout(() => {
+            navigate("/random-image");
+        }, 500);
+    }
 
     return (
         <div id={'nav'}>
@@ -16,6 +24,9 @@ function NavBar(props){
             </button>
             <button className={props.whatToShow==="Drinks" ? "active" : null} onClick={() => {props.navClick("Drinks")}}>
                 {lang === 'mk' ? 'Пијалоци' : 'Drinks'}
+            </button>
+            <button onClick={handleClick}>
+                {'Gallery'}
             </button>
         </div>
     )

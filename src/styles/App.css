@@ -43,7 +43,7 @@
     width: 70px;
 }
 #main{
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     margin: 20px auto auto auto;
     display: flex;
@@ -55,13 +55,13 @@
 #nav{
     display: flex;
     justify-content: space-evenly;
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     gap: 30px;
     height: 60px;
     flex-wrap: wrap;
 }
-#nav button {
+#nav button, .goBack {
     display: inline-block;
     background: linear-gradient(to right, rgba(0, 84, 172, 1) 50%, white 50%);
     background-size: 200% 100%;
@@ -77,7 +77,7 @@
     transition: all 0.5s ease;
 }
 
-#nav button:hover {
+#nav button:hover, .goBack:hover {
     animation: fillRight 0.5s forwards;
     color: rgba(0, 84, 172, 1);
     transform: translateY(-3px);
@@ -236,6 +236,19 @@
 .mk{
     border-radius: 0 0 20px 20px;
 }
+.random-pizza{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.pizza-image{
+    margin-top: 30px;
+    width: 500px;
+}
 @media (max-width: 768px) {
     .head{
         height: 100px;
@@ -301,6 +314,9 @@
     }
     .drinkName{
         width: 200px;
+    }
+    .pizza-image{
+        width: 300px;
     }
     #right-div{
         margin-left: 5px;
