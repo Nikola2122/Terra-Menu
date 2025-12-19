@@ -2,7 +2,7 @@ import {useContext, useEffect, useState} from "react";
 import {LangContext} from "../utils/LangContext";
 import {useNavigate} from "react-router-dom";
 import spinner from "../assets/images/spinner.png"
-import flag from "../assets/images/Flag_of_the_United_States.svg.png";
+
 
 export default function RandomImage() {
     let lang = useContext(LangContext)
