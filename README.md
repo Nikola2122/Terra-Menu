@@ -10,7 +10,7 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 
 ## Features
 - Client-side routing using **React Router** — menus and gallery switch without page refresh
-- Gallery route (`/random-image`) fetching **a random image dynamically from a Netlify serverless API endpoint**
+-  Gallery route (`/random-image`) fetching **a random image dynamically from a Netlify serverless API endpoint** using an **environment variable for the API URL**
 - Category-based menu filtering
 - Fast, clean UI built using reusable React components
 - Fully responsive design for all devices
@@ -20,14 +20,14 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 ---
 
 ## Tech Stack
-| Tech                        | Purpose |
-|-----------------------------|----------|
-| **React**                   | Component-based UI |
-| **JavaScript / JSX**        | App logic & rendering |
-| **CSS / Styled Components** | Styling  |
-| **React Router**            | Client-side routing |
-| **Netlify**                 | Deployment & Hosting, serverless API |
-| **Local JSON files**        | Menu "database" / static data |
+| Tech                        | Purpose                                                                         |
+|-----------------------------|---------------------------------------------------------------------------------|
+| **React**                   | Component-based UI                                                              |
+| **JavaScript / JSX**        | App logic & rendering                                                           |
+| **CSS / Styled Components** | Styling                                                                         |
+| **React Router**            | Client-side routing                                                             |
+| **Netlify**                 | Deployment & Hosting, serverless API, environment variables                     |
+| **Local JSON files**        | Menu "database" / static data                                                   |
 
 ---
 
