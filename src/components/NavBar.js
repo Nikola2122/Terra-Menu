@@ -26,7 +26,7 @@ function NavBar(props){
                 {lang === 'mk' ? 'Пијалоци' : 'Drinks'}
             </button>
             <button onClick={handleClick}>
-                {'Gallery'}
+                {lang === 'en' ? 'Gallery' : 'Галерија'}
             </button>
         </div>
     )
