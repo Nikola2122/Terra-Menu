@@ -30,7 +30,9 @@ function Display(props) {
                                 component={[Input]}
                             />
                         </FormLayout>
-
+                        <FormConsumer>
+                            {form.values.input}
+                        </FormConsumer>
                         <FormButtonGroup>
                             <Submit onSubmit={() => alert(form.values.input)}>submit</Submit>
                         </FormButtonGroup>

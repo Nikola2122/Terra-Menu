@@ -1,0 +1,16 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Skopje",
+			"country": {
+				"code": "MK",
+				"name": "North Macedonia"
+			},
+			"timezone": "Europe/Skopje",
+			"latitude": 41.9985,
+			"longitude": 21.4313,
+			"postalCode": "1000"
+		},
+		"timestamp": 1766585544480
+	}
+}
