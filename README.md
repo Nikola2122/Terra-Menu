@@ -33,6 +33,10 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 
 ## Installation
 
+The 'Gallery' page that requires the Netlify function won’t work locally, so it’s better to check out the **LIVE version**.
+
+To run the app locally:
+
 ```bash
 git clone https://github.com/Nikola2122/Terra-Menu.git
 cd Terra-Menu
