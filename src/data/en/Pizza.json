@@ -40,5 +40,11 @@
     "desc": "pork/chicken meat, eggs, cheese",
     "price": "260 den.",
     "id": 7
+  },
+  {
+    "name": "Calzone",
+    "desc": "pelate sauce, yellow cheese, ham, mushrooms",
+    "price": "180 den.",
+    "id": 8
   }
 ]
