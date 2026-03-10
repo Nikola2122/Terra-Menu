@@ -249,6 +249,31 @@
     margin-top: 30px;
     width: 500px;
 }
+.cool-spinner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.cool-spinner::after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgba(0, 84, 172, 0.2);
+    border-top-color: #0054AC;
+    animation: spin 1s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(0, 84, 172, 0.5);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 @media (max-width: 768px) {
     .head{
         height: 100px;
@@ -334,5 +359,16 @@
     }
     .mk{
         padding: 5px 7px 5px 7px;
+    }
+    .cool-spinner {
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+    }
+    .cool-spinner::after {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-width: 4px;
     }
 }
