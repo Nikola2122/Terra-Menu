@@ -361,13 +361,13 @@
         padding: 5px 7px 5px 7px;
     }
     .cool-spinner {
-        width: 50px;
-        height: 50px;
-        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
     }
     .cool-spinner::after {
-        width: 40px;
-        height: 40px;
+        width: 150px;
+        height: 150px;
         margin: 5px;
         border-width: 4px;
     }
