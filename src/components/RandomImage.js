@@ -1,7 +1,6 @@
 import {useContext, useEffect, useState} from "react";
 import {LangContext} from "../utils/LangContext";
 import {useNavigate} from "react-router-dom";
-import spinner from "../assets/images/spinner.png"
 
 
 export default function RandomImage() {
