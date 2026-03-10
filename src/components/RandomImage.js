@@ -32,9 +32,11 @@ export default function RandomImage() {
         <div className={'random-pizza'}>
             <button onClick={handleClick} className={'goBack'}>{lang === 'mk' ? 'Назад' : 'Back'}</button>
             <div>
-
+                {url ? (
+                    <img className={'pizza-image'} alt={''} src={url}/>
+                ) : (
                     <div className="cool-spinner"></div>
-
+                )}
             </div>
         </div>
     )
