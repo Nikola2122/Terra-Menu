@@ -4,7 +4,7 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 
 **Live:** https://terra-menu.netlify.app/
 
-**Used by:** Terra Bar & Kitchen — Saint Nikole
+**Used by:** Terra Bar & Kitchen Saint Nikole
 
 ---
 
