@@ -1,4 +1,4 @@
-# React Menu App
+# Terra Bar & Kitchen Restaurant Menu App
 
 A simple and responsive **React-based Menu Application**, designed for filtering dishes by categories, providing an elegant UI experience and more.
 
