@@ -9,7 +9,7 @@ A simple and responsive **React-based Menu Application**, designed for filtering
 ---
 
 ## Features
-- Client-side routing using **React Router** — menus and gallery switch without page refresh
+- Client-side routing using **React Router** so menus and gallery switch without page refresh
 -  Gallery route (`/random-image`) fetching **a random image dynamically from a Netlify serverless API endpoint** using an **environment variable for the API URL**
 - Category-based menu filtering
 - Fast, clean UI built using reusable React components
