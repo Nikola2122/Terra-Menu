@@ -1,15 +1,15 @@
-# React Menu App
+# Terra Bar & Kitchen Restaurant Menu App
 
 A simple and responsive **React-based Menu Application**, designed for filtering dishes by categories, providing an elegant UI experience and more.
 
 **Live:** https://terra-menu.netlify.app/
 
-**Used by:** Terra Bar & Kitchen — Saint Nikole
+**Used by:** Terra Bar & Kitchen Saint Nikole
 
 ---
 
 ## Features
-- Client-side routing using **React Router** — menus and gallery switch without page refresh
+- Client-side routing using **React Router** so menus and gallery switch without page refresh
 -  Gallery route (`/random-image`) fetching **a random image dynamically from a Netlify serverless API endpoint** using an **environment variable for the API URL**
 - Category-based menu filtering
 - Fast, clean UI built using reusable React components
