@@ -7,6 +7,7 @@ import {LangContext} from "./utils/LangContext";
 import {BrowserRouter as Router} from "react-router-dom";
 import RoutesWrapper from "./components/RoutesWrapper";
 import {Snowfall} from "react-snowfall";
+import Fall from "./components/Fall";
 
 function App() {
     const [lang, setLang] = useState('mk')
@@ -20,8 +21,13 @@ function App() {
         || (month === 2 && day <= 15)  // Feb 1-15
     ;
 
+    const showFall = (month >= 9 && month <= 10) // all September and October
+        || (month === 11 && day < 15)            // Nov 1-14
+    ;
+
     return (
         <LangContext.Provider value={lang}>
+            {showFall && <Fall />}
             {showSnow && <Snowfall snowflakeCount={200} />}
             <Router>
                 <div id={'wrapper'}>
